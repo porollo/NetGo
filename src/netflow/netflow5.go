@@ -1,6 +1,8 @@
 package netflow
 
-import "github.com/jinzhu/gorm"
+import (
+	"gorm.io/gorm"
+)
 
 type V5Header struct {
 	gorm.Model
