@@ -1,7 +1,6 @@
 package main
 
 type Product struct {
-	Model
 	Code  string
 	Price uint
 }

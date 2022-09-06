@@ -1,7 +1,7 @@
 package netflow
 
 import (
-	"gorm.io/gorm"
+	"github.com/jinzhu/gorm"
 )
 
 type V5FlowHeader struct {
