@@ -7,15 +7,16 @@ import (
 )
 
 const (
-	network    = "udp"
+	networkUDP = "udp"
+	networkTCP = "tcp"
 	address    = ":9995"
 	readBuffer = 1048576
 )
 
 func main() {
 
-	addr, _ := net.ResolveUDPAddr(network, address)
-	sock, _ := net.ListenUDP(network, addr)
+	addr, _ := net.ResolveUDPAddr(networkUDP, address)
+	sock, _ := net.ListenUDP(networkUDP, addr)
 	sock.SetReadBuffer(readBuffer)
 
 	i := 0
