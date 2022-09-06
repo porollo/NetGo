@@ -4,7 +4,7 @@ import (
 	"gorm.io/gorm"
 )
 
-type V5Header struct {
+type V5FlowHeader struct {
 	gorm.Model
 	version          uint16 //NetFlow export format version number
 	count            uint16 //Number of flows exported in this packet (1-30)
